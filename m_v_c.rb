@@ -1,0 +1,6 @@
+Rails follows the model-view-controller (MVC) architectural pattern,which enforces a separation between ‘‘domain logic’’ from the input and presentation logic associated with a graphical user interface (GUI).
+ In the case of web applications, the ‘‘domain logic’’typically consists of data models for things like users, articles, and products, and the GUI is just a web page in a web browser.
+
+When interacting with a Rails application, a browser sends a request, which is received by a web server and passed on to a Rails controller, which is in charge of what to do next. In some cases, the controller will immediately render a view, which is a template that gets converted to HTML and sent back to the browser. More commonly for dynamic sites, the controller interacts with a model,which is a Ruby object that represents an element of the site (such as a user) and is in charge of communicating
+with the database. After invoking the model, the controller then renders the view and
+returns the complete web page to the browser as HTML.
